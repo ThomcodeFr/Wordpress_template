@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,700&display=swap');
+
+/*
+Theme Name: WP LerNumerique Theme
+Theme URI: https://github.com/foo/wp-custom-theme/
+Author: ThomCodeFr
+Author URI: https://github.com/ThomcodeFr
+Description: Thème dans le cadre d'un projet d'études Pop School, création d'un site Wordpress
+Tags: usage, couleur, style, accessiblité, etc
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 5.7.2
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wp-custom-theme
+*/
+
+/**** Menu Configuration ****/
+
+#logoPicture {
+  text-align: center;
+}
+
+#logoPicture img{
+  width: 30rem;
+}
+
+.menu ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+.page_item a {
+  font-family: 'Noto Serif', serif;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
