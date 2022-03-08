@@ -23,6 +23,11 @@ if ($query->have_posts()) :
 ?>
   <article>
     <h1><?php the_title(); ?></h1>
+    <div><?php the_time(get_option('date_format')); ?></div>
+    <?php if (has_post_thumbnail()) :
+      the_post_thumbnail('medium');
+    endif;
+    ?>
     <div><?php the_content(); ?></div>
   </article>
   <?php
@@ -42,6 +47,7 @@ if (have_posts()) :
       <h2><a href="<?= get_permalink(); ?>"><?php the_title(); ?></a></h2>
       <div><?php the_content(); ?></div>
     </article>
+    
 <?php
   endwhile;
 endif;

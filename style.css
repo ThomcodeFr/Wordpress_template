@@ -22,7 +22,7 @@ Text Domain: wp-custom-theme
   text-align: center;
 }
 
-#logoPicture img{
+#logoPicture img {
   width: 30rem;
 }
 
@@ -42,4 +42,25 @@ Text Domain: wp-custom-theme
   color: black;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.home h1 {
+  text-align: center;
+  font-family: 'Noto Serif', serif;
+  font-size: 1.5rem;
+}
+/*
+   * Footer
+   */
+
+.blog-footer {
+  bottom: 0;
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 0.05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
 }
