@@ -69,12 +69,11 @@ add_theme_support('html5');
 add_theme_support('title-tag');
 // activation de la fonctionnalité des vignettes via la configuration WP
 add_theme_support('post-thumbnails');
+// activation de la gestion des menus
+add_theme_support('menus');
 
 /**
  * Menu
  */
-function register_my_menu()
-{
-  register_nav_menu('main-menu', 'Menu principal');
-}
-add_action('after_setup_theme', 'register_my_menu');
+// le premier paramètre est la localisation, le second est la description
+register_nav_menu('header','En tête du menu');

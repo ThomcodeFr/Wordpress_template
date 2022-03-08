@@ -37,7 +37,7 @@
     <?php
     //Insertion du menu
     wp_nav_menu(array(
-      'theme_location' => 'Menu Principal',
+      'theme_location' => 'header',
       'container_class' => 'custom-menu-class'
     ));
     ?>

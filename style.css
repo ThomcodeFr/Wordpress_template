@@ -26,17 +26,17 @@ Text Domain: wp-custom-theme
   width: 30rem;
 }
 
-.menu ul {
+.custom-menu-class ul {
   margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
 }
 
-.menu li {
+.custom-menu-class li {
   list-style-type: none;
 }
 
-.page_item a {
+.menu-item a {
   font-family: 'Noto Serif', serif;
   text-decoration: none;
   color: black;
