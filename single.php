@@ -2,7 +2,6 @@
 <div class="main single">
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
-    test test test
       <div class="post">
         <h1 class="post-title"><?php the_title(); ?></h1>
         <p class="post-info">

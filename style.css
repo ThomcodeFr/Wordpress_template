@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,700&display=swap');
 
 /*
-Theme Name: WP LerNumerique Theme
-Theme URI: https://github.com/foo/wp-custom-theme/
+Theme Name: WP_LerNumerique_Theme
+Theme URI: https://github.com/foo/wp-LerNumerique-theme/
 Author: ThomCodeFr
 Author URI: https://github.com/ThomcodeFr
 Description: Thème dans le cadre d'un projet d'études Pop School, création d'un site Wordpress
@@ -13,7 +13,9 @@ Tested up to: 5.7.2
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: wp-custom-theme
+Text Domain: wp-lernumerique-theme
+LerNumerique Theme, Copyright 2022 ThomCodeFr
+LerNumerique Theme is distributed under the terms of the GNU GPL -->
 */
 
 /**** Menu Configuration ****/
@@ -26,15 +28,12 @@ Text Domain: wp-custom-theme
   width: 30rem;
 }
 
-
-
 .sorry {
   display: block;
   width: 400px;
   margin: auto;
   padding: auto;
 }
-
 
 h1 {
   text-align: center;

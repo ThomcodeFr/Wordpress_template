@@ -20,35 +20,41 @@ $query = new WP_Query($args);
 // Affichage du résultat de la requête WP_Query sans la boucle
 if ($query->have_posts()) :
   $query->the_post();
+  $firstID = get_the_ID();
+  $firstPostType = get_post_type();
 ?>
+  <?php wp_link_pages(); ?>
   <article <?php post_class() ?>>
-    <h1><?php the_title(); ?></h1>
-    <div><?php the_time(get_option('date_format')); ?></div>
-    <?php if (has_post_thumbnail()) :
-      the_post_thumbnail('medium');
-    endif;
-    ?>
-    <div><?php the_content(); ?></div>
+    <div class="container">
+      <h1><?php the_title() ?></h1>
+      <div><?php the_time(get_option('date_format')); ?></div>
+      <?php if (has_post_thumbnail()) :
+        the_post_thumbnail('medium');
+      endif;
+      ?><?php the_content(); ?>
+    </div>
   </article>
   <?php
 endif;
 
 // Restauration des paramètres originaux de la requête de l'utilisateur
-wp_reset_postdata();
-
+/* wp_reset_postdata();
+ */
 // Affichage de la liste des articles avec la boucle
 if (have_posts()) :
   while (have_posts()) :
     the_post();
+    if (!(get_the_ID() === $firstID && $firstPostType === get_post_type())) :
   ?>
-    <article>
-      <?php // Notez que le titre est dans un lien clickable
-      ?>
-      <h2><a href="<?= get_permalink(); ?>"><?php the_title(); ?></a></h2>
-      <div><?php the_content(); ?></div>
-    </article>
+      <article <?php post_class() ?>>
+        <?php // Notez que le titre est dans un lien clickable
+        ?>
+        <h2><a href="<?php get_permalink(); ?>"><?php the_title(); ?></a></h2>
+        <div><?php the_content(); ?></div>
+      </article>
 
 <?php
+    endif;
   endwhile;
 endif;
 
