@@ -1,0 +1,35 @@
+.custom-menu-class ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.custom-menu-class li {
+  list-style-type: none;
+  display: inline-block;
+  min-width: 50px;
+}
+
+.menu-item a {
+  font-family: 'Noto Serif', serif;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 70px;
+}
+
+.menu-item a:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.menu-item a:hover:after {
+  width: 90%;
+  background: rgb(0, 11, 160);
+}

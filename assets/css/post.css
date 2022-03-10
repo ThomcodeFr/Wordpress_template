@@ -1,0 +1,19 @@
+/**
+ * The template for displaying css style post in the LerNumerique Theme.
+ *
+ * @package WordPress
+ * @subpackage LerNumerique
+ * @since LerNumerique 1.0
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+
+article {
+  padding: 0 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  border: rgb(99, 99, 99) 0.5px solid;
+}
+
+article h1 {
+  margin-top: 10px;
+}

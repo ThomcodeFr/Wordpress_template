@@ -17,7 +17,6 @@
   endif;
   ?>
   <link rel="icon" type="image/png" href="//assets/images/favicon.png" />
-  <link rel="shortcut icon" type="image/png" href="<?= get_stylesheet_directory_uri(); ?>/img/icons8-bulle.svg" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
   <!-- wp_head permet d'inserer toutes les informations à mettre en en-tête -->

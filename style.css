@@ -26,32 +26,24 @@ Text Domain: wp-custom-theme
   width: 30rem;
 }
 
-.custom-menu-class ul {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-evenly;
+
+
+.sorry {
+  display: block;
+  width: 400px;
+  margin: auto;
+  padding: auto;
 }
 
-.custom-menu-class li {
-  list-style-type: none;
-}
 
-.menu-item a {
-  font-family: 'Noto Serif', serif;
-  text-decoration: none;
-  color: black;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.home h1 {
+h1 {
   text-align: center;
   font-family: 'Noto Serif', serif;
   font-size: 1.5rem;
 }
 
-.sorry img{
-  height: 50px;
+.wp-block-contact-form-7-contact-form-selector {
+  text-align: center;
 }
 
 /*

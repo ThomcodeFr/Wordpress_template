@@ -36,6 +36,8 @@ function my_theme_enqueue_styles()
   // chargement d'un fichier CSS
   //wp_enqueue_style('my-theme-main', get_stylesheet_directory_uri() . '/css/main.css', []);
   wp_enqueue_style('style', get_stylesheet_uri());
+  wp_enqueue_style('menu', get_template_directory_uri() . '/assets/css/menu.css');
+  wp_enqueue_style('post', get_template_directory_uri().'/assets/css/post.css');
 
   // chargement de Bootstrap
   wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', []);

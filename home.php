@@ -9,7 +9,7 @@ get_header();
 // Les paramètres de la requête WP_QUery
 $args = array(
   // Sélection de pages (au lieu de posts)
- /*  'post_type' => 'page', */
+  /*  'post_type' => 'page', */
   // Sélection d'une page par son slug
   'pagename' => 'actus',
 );
@@ -21,7 +21,7 @@ $query = new WP_Query($args);
 if ($query->have_posts()) :
   $query->the_post();
 ?>
-  <article>
+  <article <?php post_class() ?>>
     <h1><?php the_title(); ?></h1>
     <div><?php the_time(get_option('date_format')); ?></div>
     <?php if (has_post_thumbnail()) :
