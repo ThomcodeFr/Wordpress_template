@@ -49,6 +49,11 @@ Text Domain: wp-custom-theme
   font-family: 'Noto Serif', serif;
   font-size: 1.5rem;
 }
+
+.sorry img{
+  height: 50px;
+}
+
 /*
    * Footer
    */

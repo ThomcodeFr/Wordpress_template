@@ -9,7 +9,7 @@ get_header();
 // Les paramètres de la requête WP_QUery
 $args = array(
   // Sélection de pages (au lieu de posts)
-  'post_type' => 'page',
+ /*  'post_type' => 'page', */
   // Sélection d'une page par son slug
   'pagename' => 'actus',
 );
@@ -47,7 +47,7 @@ if (have_posts()) :
       <h2><a href="<?= get_permalink(); ?>"><?php the_title(); ?></a></h2>
       <div><?php the_content(); ?></div>
     </article>
-    
+
 <?php
   endwhile;
 endif;
