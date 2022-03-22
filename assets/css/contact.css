@@ -1,8 +1,15 @@
 /**** Contact Configuration ****/
 
-.wp-block-contact-form-7-contact-form-selector {
-  text-align: center;
+.contact-flex{
+  display: flex;
+  justify-content: space-around;
 }
-.wpcf7-submit {
-  margin: auto;
+.contact-content {
+  padding: 40px;
+  border: 1px solid #bbb;
+  background: #f4f4f4;
+  color: #777;
+}
+.contact-text p {
+  text-align: center;
 }
