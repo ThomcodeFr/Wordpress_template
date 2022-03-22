@@ -41,6 +41,7 @@ function my_theme_enqueue_styles()
   wp_enqueue_style('style', get_stylesheet_uri());
   wp_enqueue_style('menu', get_template_directory_uri() . '/assets/css/menu.css');
   wp_enqueue_style('post', get_template_directory_uri() . '/assets/css/post.css');
+  wp_enqueue_style('contact', get_template_directory_uri() . '/assets/css/contact.css');
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles'); //hook informatique qui permet de personnaliser
 
@@ -87,7 +88,7 @@ add_theme_support("custom-logo");
   {
     register_nav_menus(array(
       'primary_menu' => __('header', 'En tête du menu'),
-      'footer_menu'  => __('footer', 'footer'),
+      'footer_menu'  => __('footer', 'Position menu au footer'),
     ));
   }
   add_action('after_setup_theme', 'mytheme_register_nav_menu', 0);

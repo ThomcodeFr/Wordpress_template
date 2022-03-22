@@ -47,10 +47,8 @@ if (have_posts()) :
     if (!(get_the_ID() === $firstID && $firstPostType === get_post_type())) :
   ?>
       <article <?php post_class() ?>>
-        <?php // Notez que le titre est dans un lien clickable
-        ?>
         <h2><a href="<?php get_permalink(); ?>"><?php the_title(); ?></a></h2>
-        <div><?php the_content(); ?></div>
+        <div class="blog-content"><?php the_content(); ?></div>
       </article>
 
 <?php

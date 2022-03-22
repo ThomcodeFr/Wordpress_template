@@ -3,8 +3,9 @@
   <?php
   wp_nav_menu(array(
     'theme_location' => 'footer',
-    'container_class' => 'custom-menu-class-footer'
-  ));
+    'menu'=>'footer-menu',
+    'container_class' => 'custom-menu-class-footer',
+ ));
   ?>
   <?php
   echo "<p>© " . date("Y") . " Designed with ❤️ by Thomas - Pop School</p>";

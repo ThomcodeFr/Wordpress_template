@@ -1,3 +1,5 @@
+/*MENU NAVIGATION HAUT*/
+
 .custom-menu-class {
   background-color: #fff;
   padding: 8px 0;
@@ -15,7 +17,7 @@
   min-width: 50px;
 }
 
-.menu-item a {
+.custom-menu-class a {
   font-family: 'Noto Serif', serif;
   text-decoration: none;
   color: #000;
@@ -25,7 +27,7 @@
   font-size: 13px;
 }
 
-.menu-item a:after {
+.custom-menu-class a:after {
   content: '';
   display: block;
   margin: auto;
@@ -36,7 +38,33 @@
 }
 
 /*Epaisseur et style du soulignement */
-.menu-item a:hover:after {
+.custom-menu-class a:hover:after {
   width: 99%;
   background: #000;
+}
+
+/*MENU FOOTER HAUT*/
+.custom-menu-class-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.custom-menu-class-footer li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.custom-menu-class-footer a {
+  font-family: 'Noto Serif', serif;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 10px;
+}
+
+.custom-menu-class-footer a:hover {
+  color: rgb(97, 97, 97);
 }
