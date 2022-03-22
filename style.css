@@ -18,7 +18,14 @@ LerNumerique Theme, Copyright 2022 ThomCodeFr
 LerNumerique Theme is distributed under the terms of the GNU GPL -->
 */
 
-/**** Menu Configuration ****/
+/**** Header Configuration ****/
+
+.menu-position {
+  background-color: #fff;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
 
 #logoPicture {
   text-align: center;
@@ -28,12 +35,7 @@ LerNumerique Theme is distributed under the terms of the GNU GPL -->
   width: 30rem;
 }
 
-.sorry {
-  display: block;
-  width: 400px;
-  margin: auto;
-  padding: auto;
-}
+/**** Body Configuration ****/
 
 h1 {
   text-align: center;
@@ -41,8 +43,22 @@ h1 {
   font-size: 1.5rem;
 }
 
+
+
+/**** Contact Configuration ****/
+
+
 .wp-block-contact-form-7-contact-form-selector {
   text-align: center;
+}
+
+/**** 404 Configuration ****/
+
+.sorry {
+  display: block;
+  width: 400px;
+  margin: auto;
+  padding: auto;
 }
 
 /*
@@ -51,7 +67,7 @@ h1 {
 
 .blog-footer {
   bottom: 0;
-  padding: 2.5rem 0;
+  padding: 0.938rem 0;
   color: #999;
   text-align: center;
   background-color: #f9f9f9;

@@ -18,6 +18,7 @@
   ?>
   <link rel="icon" type="image/png" href="//assets/images/favicon.png" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+  <!-- DarkMode Plugin -->
 
   <!-- wp_head permet d'inserer toutes les informations à mettre en en-tête -->
   <?php wp_head(); ?>
@@ -27,6 +28,15 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
   <header class="header">
+    <div class="menu-position">
+      <?php
+      //Insertion du menu
+      wp_nav_menu(array(
+        'theme_location' => 'header',
+        'container_class' => 'custom-menu-class'
+      ));
+      ?>
+    </div>
     <!-- Insertion du logo -->
     <Section id="logoPicture">
       <a href="<?php echo esc_url(home_url('/')); ?>">
@@ -34,11 +44,4 @@
       </a>
     </Section>
 
-    <?php
-    //Insertion du menu
-    wp_nav_menu(array(
-      'theme_location' => 'header',
-      'container_class' => 'custom-menu-class'
-    ));
-    ?>
   </header>

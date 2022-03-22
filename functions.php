@@ -83,4 +83,11 @@ add_theme_support("custom-logo");
  * Menu
  */
 // le premier paramètre est la localisation, le second est la description
-register_nav_menu('header', 'En tête du menu');
+  function mytheme_register_nav_menu()
+  {
+    register_nav_menus(array(
+      'primary_menu' => __('header', 'En tête du menu'),
+      'footer_menu'  => __('footer', 'footer'),
+    ));
+  }
+  add_action('after_setup_theme', 'mytheme_register_nav_menu', 0);

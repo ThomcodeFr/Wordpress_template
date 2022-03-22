@@ -1,7 +1,12 @@
+.custom-menu-class {
+  background-color: #fff;
+  padding: 8px 0;
+  position: 0;
+}
+
 .custom-menu-class ul {
-  margin-top: 20px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .custom-menu-class li {
@@ -13,10 +18,11 @@
 .menu-item a {
   font-family: 'Noto Serif', serif;
   text-decoration: none;
-  color: black;
+  color: #000;
   text-transform: uppercase;
   font-weight: bold;
-  line-height: 70px;
+  line-height: 30px;
+  font-size: 13px;
 }
 
 .menu-item a:after {
@@ -29,7 +35,8 @@
   transition: width 0.5s ease, background-color 0.5s ease;
 }
 
+/*Epaisseur et style du soulignement */
 .menu-item a:hover:after {
-  width: 90%;
-  background: rgb(0, 11, 160);
+  width: 99%;
+  background: #000;
 }

@@ -1,8 +1,15 @@
 <!-- wp_footer est une fonction wp qui permet d'inserer le footer -->
 <footer class="blog-footer">
-  <p>© 2022 - Charles et Thomas - Pop School </p>
-  <p>
-    <a href="#">Retour en haut</a>
+  <?php
+  wp_nav_menu(array(
+    'theme_location' => 'footer',
+    'container_class' => 'custom-menu-class-footer'
+  ));
+  ?>
+  <?php
+  echo "<p>© " . date("Y") . " Designed with ❤️ by Thomas - Pop School</p>";
+  ?>
+  <a href="#">Retour en haut</a>
   </p>
 </footer>
 <?php wp_footer(); ?>
