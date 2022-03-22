@@ -3,15 +3,17 @@
   <?php
   wp_nav_menu(array(
     'theme_location' => 'footer',
-    'menu'=>'footer-menu',
+    'menu' => 'footer-menu',
     'container_class' => 'custom-menu-class-footer',
- ));
+  ));
   ?>
+  <div class="get-up">
+      <a href="#">Retour en haut</a>
+  </div>
+
   <?php
   echo "<p>© " . date("Y") . " Designed with ❤️ by Thomas - Pop School</p>";
   ?>
-  <a href="#">Retour en haut</a>
-  </p>
 </footer>
 <?php wp_footer(); ?>
 </body>

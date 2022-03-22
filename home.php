@@ -47,7 +47,9 @@ if (have_posts()) :
     if (!(get_the_ID() === $firstID && $firstPostType === get_post_type())) :
   ?>
       <article <?php post_class() ?>>
-        <h2><a href="<?php get_permalink(); ?>"><?php the_title(); ?></a></h2>
+        <div class="blog-title">
+          <h2><a href="<?php get_permalink(); ?>"><?php the_title(); ?></a></h2>
+        </div>
         <div class="blog-content"><?php the_content(); ?></div>
       </article>
 

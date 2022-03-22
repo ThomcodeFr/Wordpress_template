@@ -20,14 +20,10 @@ LerNumerique Theme is distributed under the terms of the GNU GPL -->
 
 /**** Header Configuration ****/
 
-.menu-position {
-  background-color: #fff;
-  position: sticky;
-  top: 0%;
-  z-index: 1;
-}
+
 
 #logoPicture {
+  margin-top: 100px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -81,4 +77,18 @@ hr {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+.get-up {
+  margin-bottom: 10px;
+}
+
+.get-up a {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+  padding: 5px;
+  border: 1px solid black;
 }

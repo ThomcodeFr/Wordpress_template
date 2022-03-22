@@ -1,7 +1,15 @@
+
 /*MENU NAVIGATION HAUT*/
 
+.menu-position {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
 .custom-menu-class {
-  background-color: #fff;
   padding: 8px 0;
   position: 0;
 }
