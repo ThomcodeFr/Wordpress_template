@@ -1,4 +1,5 @@
 <?php
+//Page d'actualité
 
 //fonction Wp permet d'afficher un en-tête
 get_header();
@@ -34,6 +35,7 @@ if ($query->have_posts()) :
       ?><?php the_content(); ?>
     </div>
   </article>
+  <h1>Affichage des articles plus ancien</h1>
   <?php
 endif;
 
@@ -46,13 +48,16 @@ if (have_posts()) :
     the_post();
     if (!(get_the_ID() === $firstID && $firstPostType === get_post_type())) :
   ?>
+      <!-- Affichage des articles -->
       <article <?php post_class() ?>>
         <div class="blog-title">
-          <h2><a href="<?php get_permalink(); ?>"><?php the_title(); ?></a></h2>
+          <h1><a href="<?php get_permalink(); ?>">
+              <?php the_title(); ?></a></h1>
+          <?php the_time(get_option('date_format')); ?>
         </div>
-        <div class="blog-content"><?php the_content(); ?></div>
+        <div class="blog-content">
+          <?php the_content(); ?></div>
       </article>
-
 <?php
     endif;
   endwhile;

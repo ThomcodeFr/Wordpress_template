@@ -1,5 +1,6 @@
-
-/*MENU NAVIGATION HAUT*/
+/*
+   * Menu Navigation Haut
+   */
 
 .menu-position {
   background-color: white;
@@ -45,13 +46,19 @@
   transition: width 0.5s ease, background-color 0.5s ease;
 }
 
-/*Epaisseur et style du soulignement */
+/*
+   * Epaisseur & Style du soulignement
+   */
+
 .custom-menu-class a:hover:after {
   width: 99%;
   background: #000;
 }
 
-/*MENU FOOTER HAUT*/
+/*
+   * Menu footer
+   */
+
 .custom-menu-class-footer {
   display: flex;
   justify-content: flex-end;

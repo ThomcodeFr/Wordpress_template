@@ -1,0 +1,8 @@
+/*
+   * Blog Page Configuration
+   */
+
+.blog-title a {
+  color: rgb(97, 97, 97);
+  text-decoration: none;
+}

@@ -1,4 +1,6 @@
-/**** Contact Configuration ****/
+/*
+   * Contact Configuration
+   */
 
 .contact-flex{
   display: flex;
@@ -9,7 +11,4 @@
   border: 1px solid #bbb;
   background: #f4f4f4;
   color: #777;
-}
-.contact-text p {
-  text-align: center;
 }

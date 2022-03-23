@@ -40,6 +40,7 @@ function my_theme_enqueue_styles()
   //wp_enqueue_style('my-theme-main', get_stylesheet_directory_uri() . '/css/main.css', []);
   wp_enqueue_style('style', get_stylesheet_uri());
   wp_enqueue_style('menu', get_template_directory_uri() . '/assets/css/menu.css');
+  wp_enqueue_style('blog', get_template_directory_uri() . '/assets/css/blog.css');
   wp_enqueue_style('post', get_template_directory_uri() . '/assets/css/post.css');
   wp_enqueue_style('formateur', get_template_directory_uri() . '/assets/css/formateur.css');
   wp_enqueue_style('contact', get_template_directory_uri() . '/assets/css/contact.css');

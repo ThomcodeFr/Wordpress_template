@@ -8,14 +8,26 @@
   ));
   ?>
   <div class="get-up">
-      <a href="#">Retour en haut</a>
+    <a href="#">Retour en haut</a>
   </div>
 
   <?php
   echo "<p>© " . date("Y") . " Designed with ❤️ by Thomas - Pop School</p>";
   ?>
+  <?php wp_footer(); ?>
 </footer>
-<?php wp_footer(); ?>
+<script src="/assets/js/darkmode.js"></script>
+<script>
+  var options = {
+    light: "light.css",
+    dark: "dark.css",
+    startAt: "23:00",
+    endAt: "06:00",
+    checkSystemScheme: true,
+    saveOnToggle: true
+  };
+  var DarkMode = new DarkMode(options);
+</script>
 </body>
 
 </html>
