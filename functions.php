@@ -35,7 +35,7 @@ function my_theme_enqueue_styles()
 {
 
   // chargement de Bootstrap
-/*   wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', []);
+  /*   wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', []);
  */  // chargement d'un fichier CSS
   //wp_enqueue_style('my-theme-main', get_stylesheet_directory_uri() . '/css/main.css', []);
   wp_enqueue_style('style', get_stylesheet_uri());
@@ -43,6 +43,7 @@ function my_theme_enqueue_styles()
   wp_enqueue_style('blog', get_template_directory_uri() . '/assets/css/blog.css');
   wp_enqueue_style('post', get_template_directory_uri() . '/assets/css/post.css');
   wp_enqueue_style('formateur', get_template_directory_uri() . '/assets/css/formateur.css');
+  wp_enqueue_style('developpement', get_template_directory_uri() . '/assets/css/developpement.css');
   wp_enqueue_style('contact', get_template_directory_uri() . '/assets/css/contact.css');
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles'); //hook informatique qui permet de personnaliser
@@ -61,9 +62,17 @@ function my_theme_enqueue_script()
 
   // chargement de Bootstrap
   wp_enqueue_script('my-theme-main', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', []);
+
+  //Darkmode
+  wp_enqueue_script('darkMode', get_template_directory_uri() . '/assets/js/darkmode.js',array(),false, true);
+  wp_enqueue_script('darkModeMin', get_template_directory_uri() . '/assets/js/darkmode.min.js',array(),false, true);
+  wp_enqueue_script('darkModeInit', get_template_directory_uri() . '/assets/js/darkModeInit.js',array(),false, true);
+  $translation_array = array('templateUrl'=> get_template_directory_uri());
+  wp_localize_script('darkModeInit','darkmodepath', $translation_array);
 }
-//Rejoute des choses à faire quand l'action est appelée (paramètre 1, paramètre 2)
+//Rajoute des choses à faire quand l'action est appelée (paramètre 1, paramètre 2)
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_script');
+
 
 /**
  * fonctionnalités du thème
@@ -86,11 +95,11 @@ add_theme_support("custom-logo");
  * Menu
  */
 // le premier paramètre est la localisation, le second est la description
-  function mytheme_register_nav_menu()
-  {
-    register_nav_menus(array(
-      'primary_menu' => __('header', 'En tête du menu'),
-      'footer_menu'  => __('footer', 'Position menu au footer'),
-    ));
-  }
-  add_action('after_setup_theme', 'mytheme_register_nav_menu', 0);
+function mytheme_register_nav_menu()
+{
+  register_nav_menus(array(
+    'primary_menu' => __('header', 'En tête du menu'),
+    'footer_menu'  => __('footer', 'Position menu au footer'),
+  ));
+}
+add_action('after_setup_theme', 'mytheme_register_nav_menu', 0);

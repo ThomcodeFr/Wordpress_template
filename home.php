@@ -35,7 +35,7 @@ if ($query->have_posts()) :
       ?><?php the_content(); ?>
     </div>
   </article>
-  <h1>Affichage des articles plus ancien</h1>
+  <h2>Affichage des articles plus ancien</h2>
   <?php
 endif;
 
@@ -50,13 +50,14 @@ if (have_posts()) :
   ?>
       <!-- Affichage des articles -->
       <article <?php post_class() ?>>
-        <div class="blog-title">
-          <h1><a href="<?php get_permalink(); ?>">
-              <?php the_title(); ?></a></h1>
+        <div class="container">
+          <h2><a href="<?php get_permalink(); ?>">
+              <?php the_title(); ?></a></h2>
           <?php the_time(get_option('date_format')); ?>
         </div>
         <div class="blog-content">
           <?php the_content(); ?></div>
+        </div>
       </article>
 <?php
     endif;

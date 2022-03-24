@@ -1,8 +1,9 @@
-<?php
 
+<?php
 /**
  * Template Name: Template Formateur
  */
+
 get_header();
 
 ?>

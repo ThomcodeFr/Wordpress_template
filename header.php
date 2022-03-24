@@ -18,12 +18,12 @@
   ?>
   <link rel="icon" type="image/png" href="//assets/images/favicon.png" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-  <!-- DarkMode Plugin -->
-  
 
   <!-- wp_head permet d'inserer toutes les informations à mettre en en-tête -->
   <?php wp_head(); ?>
-
+  <div id="DarkModeAll">
+<!--     <link rel="stylesheet" href="http://localhost:8888/wordpress/wp-content/themes/wp-lernumerique-theme/assets/css/dark.css">
+ -->  </div>
 </head>
 
 <body <?php body_class(); ?>>

@@ -22,7 +22,6 @@ LerNumerique Theme is distributed under the terms of the GNU GPL -->
    * Header Configuration
    */
 
-
 #logoPicture {
   margin-top: 100px;
   text-align: center;
@@ -55,7 +54,6 @@ hr {
   display: flex;
   padding: 40px;
   border: 1px solid #bbb;
-  background: #f4f4f4;
   color: #777;
 }
 
@@ -78,7 +76,6 @@ hr {
   bottom: 0;
   color: #999;
   text-align: center;
-  background-color: #f9f9f9;
   border-top: 0.05rem solid #e5e5e5;
 }
 .blog-footer p:last-child {

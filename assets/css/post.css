@@ -19,12 +19,10 @@ article h1 {
 }
 
 .container {
-    padding: 26px;
-    border: 1px solid #bbb;
-    background: #F4F4F4;
-    color: #777;
+  padding: 26px;
+  border: 1px solid #bbb;
+  color: #777;
 }
-
 
 .alignleft {
   float: left;
@@ -42,9 +40,7 @@ article h1 {
 }
 
 .blog-content {
-    padding: 26px;
-    border: 1px solid #bbb;
-    background: #F4F4F4;
-    color: #777;
-
+  padding: 26px;
+  border: 1px solid #bbb;
+  color: #777;
 }

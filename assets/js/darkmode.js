@@ -67,7 +67,7 @@
     stylesheet.rel = 'stylesheet'
     stylesheet.type = 'text/css'
     stylesheet.href = url
-    if (Head.getElementsByTagName('link')[0])
+    if (Head.getElementsByTagId('DarkModeAll'))
       Head.insertBefore(stylesheet, Head.getElementsByTagName('link')[0])
     else Head.appendChild(stylesheet)
   }
