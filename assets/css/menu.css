@@ -83,3 +83,24 @@
 .custom-menu-class-footer a:hover {
   color: rgb(97, 97, 97);
 }
+
+@media screen and (max-width: 700px) {
+  .menu-position {
+    position: relative;
+    margin: 0;
+  }
+
+  .custom-menu-class ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .custom-menu-class a {
+    font-size: 10px;
+  }
+
+  #menu-footer-menu {
+    padding-left: 0;
+  }
+}

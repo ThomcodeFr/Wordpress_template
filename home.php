@@ -28,7 +28,7 @@ if ($query->have_posts()) :
   <article <?php post_class() ?>>
     <div class="container">
       <h1><?php the_title() ?></h1>
-      <div><?php the_time(get_option('date_format')); ?></div>
+      <div class="article-time"><?php the_time(get_option('date_format')); ?></divc=>
       <?php if (has_post_thumbnail()) :
         the_post_thumbnail('medium');
       endif;

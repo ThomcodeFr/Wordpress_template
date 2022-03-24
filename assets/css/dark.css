@@ -1,33 +1,44 @@
 * {
-	color: #f1f1f1!important;
-	background-color: #152121;
+  color: #f1f1f1!important;
+  background-color: #152121!important;
 }
+
+.btn {
+  margin-top: 20px;
+  background-color: darkgray!important;
+  border: darkgray!important;
+}
+
+.get-up a{
+  border: #fff solid 1px!important;
+}
+
 
 #mode-remover,
 #mode-toggler {
-	color: #252526;
-	background-color: #fff;
+  color: #252526;
+  background-color: #fff;
 }
 
 header,
 footer {
-	background-color: #252526;
+  background-color: #252526;
 }
 
 .header-description {
-	color: #aaa;
+  color: #aaa;
 }
 
 .btn:hover {
-	color: #152121;
+  color: #152121;
 }
 
 pre {
-	background-color:#252526;
-	-webkit-box-shadow: 9999px 0 0 0 #252526;
-	box-shadow: 9999px 0 0 0 #252526;
+  background-color: #252526;
+  -webkit-box-shadow: 9999px 0 0 0 #252526;
+  box-shadow: 9999px 0 0 0 #252526;
 }
 
 code {
-	color: #ddd;
+  color: #ddd;
 }

@@ -2,7 +2,7 @@
    * Contact Configuration
    */
 
-.contact-flex{
+.contact-flex {
   display: flex;
   justify-content: space-around;
 }
@@ -11,4 +11,17 @@
   border: 1px solid #bbb;
   background: #f4f4f4;
   color: #777;
+}
+
+@media screen and (max-width: 700px) {
+  .contact-flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-content {
+    padding: 0;
+    text-align: center;
+  }
+
 }

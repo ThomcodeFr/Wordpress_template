@@ -2,7 +2,7 @@
 
 /*
 Theme Name: WP_LerNumerique_Theme
-Theme URI: https://github.com/foo/wp-LerNumerique-theme/
+Theme URI: https://github.com/foo/wp_LerNumerique_theme/
 Author: ThomCodeFr
 Author URI: https://github.com/ThomcodeFr
 Description: Thème dans le cadre d'un projet d'études Pop School, création d'un site Wordpress
@@ -13,7 +13,7 @@ Tested up to: 5.7.2
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: wp-lernumerique-theme
+Text Domain: wp_lernumerique_theme
 LerNumerique Theme, Copyright 2022 ThomCodeFr
 LerNumerique Theme is distributed under the terms of the GNU GPL -->
 */
@@ -54,6 +54,7 @@ hr {
   display: flex;
   padding: 40px;
   border: 1px solid #bbb;
+  background: #f4f4f4;
   color: #777;
 }
 

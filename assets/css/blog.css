@@ -6,3 +6,32 @@
   color: rgb(97, 97, 97);
   text-decoration: none;
 }
+
+.more-link a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 17px;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+
+  .article-time {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .blog-content p {
+    font-size: 16px;
+  }
+
+  .blog-content blockquote p{
+    font-size: 13px;
+    text-align: justify;
+    margin: 0 -50px;
+  }
+}

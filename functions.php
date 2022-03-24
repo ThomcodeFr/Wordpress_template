@@ -98,8 +98,8 @@ add_theme_support("custom-logo");
 function mytheme_register_nav_menu()
 {
   register_nav_menus(array(
-    'primary_menu' => __('header', 'En tête du menu'),
-    'footer_menu'  => __('footer', 'Position menu au footer'),
+    'header' => __('En tête', 'wp_lernumerique_theme'),
+    'footer'  => __('Bas de page', 'wp_lernumerique_theme'),
   ));
 }
 add_action('after_setup_theme', 'mytheme_register_nav_menu', 0);

@@ -10,9 +10,7 @@ body {
 }
 
 header,
-footer {
-	background-color: #f8f8f8;
-}
+footer
 
 .header-description {
 	color: #aaa;
